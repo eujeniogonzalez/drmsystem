@@ -1,0 +1,11 @@
+.header-logo {
+  .header-logo-link {
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+  
+    @media screen and (max-width: 420px) {
+      font-size: 18px;
+    }
+  }
+}
+

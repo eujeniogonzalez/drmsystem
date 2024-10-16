@@ -1,0 +1,53 @@
+.language-switcher {
+  background-color: #ffffff;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 2px;
+  cursor: pointer;
+
+  .switcher-lever {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .switcher-lever-english {
+    transform: translateX(30px);
+  }
+  
+  .switcher-lever-russian {
+    transform: translateX(0px);
+  }
+
+  .switcher-lever-image-english {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url('../../../../public/images/usa.jpg');
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .switcher-lever-image-english-visible {
+    opacity: 1;
+  }
+
+  .switcher-lever-image-russia {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url('../../../../public/images/russia.jpg');
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .switcher-lever-image-russia-visible {
+    opacity: 1;
+  }
+}

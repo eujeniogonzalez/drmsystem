@@ -1,0 +1,47 @@
+@import '../../../const/const.scss';
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+
+  .message-text {
+    text-align: center;
+    color: $font-color-light;
+    color: #999999;
+    cursor: default;
+  }
+
+  .message-text-size-large {
+    font-size: 30px;
+  }
+
+  .message-text-size-medium {
+    font-size: 24px;
+  }
+
+  .message-text-size-small {
+    font-size: 18px;
+  }
+
+  .message-text-size-micro {
+    font-size: 14px;
+  }
+
+  .message-text-color-dark {
+    color: $font-color-dark;
+  }
+
+  .message-text-color-standart {
+    color: $font-color-standart;
+  }
+
+  .message-text-color-light {
+    color: $font-color-light;
+  }
+}
+

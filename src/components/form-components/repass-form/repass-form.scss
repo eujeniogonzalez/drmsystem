@@ -1,0 +1,17 @@
+.repass-form-wrapper {
+  width: 90%;
+  max-width: 400px;
+  flex-grow: 1;
+
+  .repass-form-content {
+    margin-top: 50px;
+    
+    .repass-form-title {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  }
+  
+}

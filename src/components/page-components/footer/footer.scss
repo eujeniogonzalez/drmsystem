@@ -1,0 +1,22 @@
+@import '../../../const/const.scss';
+
+footer {
+  background-color: $bg-grey-light-color;
+  height: $footer-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-limiter {
+    flex-grow: 1;
+    max-width: $content-max-width;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-logo {
+      font-size: 18px;
+    }
+  }
+}

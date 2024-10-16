@@ -1,0 +1,10 @@
+@import '../../../const/const.scss';
+
+.input-error-message {
+  color: $wrong-color;
+  font-size: 12px;
+  min-height: 20px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 8px;
+}

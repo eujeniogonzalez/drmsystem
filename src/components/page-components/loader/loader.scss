@@ -1,0 +1,108 @@
+@import '../../../const/const.scss';
+
+$speed: 0.5s;
+
+@mixin lds-ellipsis($ball-size) {
+  display: inline-block;
+  position: relative;
+  width: calc($ball-size * 5);
+  height: $ball-size;
+
+  & div {
+    position: absolute;
+    top: 0;
+    width: $ball-size;
+    height: $ball-size;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+
+  & div:nth-child(1) {
+    left: 0;
+    animation: lds-ellipsis1-#{$ball-size} $speed infinite;
+  }
+
+  & div:nth-child(2) {
+    left: 0;
+    animation: lds-ellipsis2-#{$ball-size} $speed infinite;
+  }
+
+  & div:nth-child(3) {
+    left: calc($ball-size * 2);
+    animation: lds-ellipsis2-#{$ball-size} $speed infinite;
+  }
+
+  & div:nth-child(4) {
+    left: calc($ball-size * 4);
+    animation: lds-ellipsis3-#{$ball-size} $speed infinite;
+  }
+
+  @keyframes lds-ellipsis1-#{$ball-size} {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes lds-ellipsis3-#{$ball-size} {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes lds-ellipsis2-#{$ball-size} {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc($ball-size * 2), 0);
+    }
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .lds-ellipsis-bg-grey {
+    & div {
+      background-color: $bg-grey-dark-color;
+    }
+  }
+  
+  .lds-ellipsis-bg-white {
+    & div {
+      background-color: white;
+    }
+  }
+  
+  .lds-ellipsis-bg-main {
+    & div {
+      background-color: $main-color;
+    }
+  }
+
+  .lds-ellipsis-micro {
+    @include lds-ellipsis(5px);
+  }
+  
+  .lds-ellipsis-small {
+    @include lds-ellipsis(10px);
+  }
+  
+  .lds-ellipsis-medium {
+    @include lds-ellipsis(20px);
+  }
+  
+  .lds-ellipsis-large {
+    @include lds-ellipsis(30px);
+  }
+}
+
+

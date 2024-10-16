@@ -1,0 +1,29 @@
+@import '../../../const/const.scss';
+
+header {
+  background-color: $main-color;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+
+  .header-limiter {
+    width: $content-width;
+    max-width: $content-max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-right-side {
+      display: flex;
+
+      & > div + div {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0 20px;
+  }
+}

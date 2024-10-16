@@ -1,0 +1,53 @@
+@import '../../../const/const.scss';
+
+.button {
+  display: block;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 25px;
+  font-size: 14px;
+  cursor: pointer;
+
+  & .button-title-single {
+    font-size: 18px;
+    color: inherit;
+  }
+
+  & .button-title-with-key {
+    font-size: 14px;
+    color: inherit;
+  }
+
+  & .button-key {
+    font-size: 10px;
+    opacity: 0.6;
+    color: inherit;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  @media (max-width: '600px') {
+    font-size: 16px;
+  }
+}
+
+.button-main-color {
+  background-color: $main-color;
+  color: #ffffff;
+}
+
+.button-grey-color {
+  background-color: $bg-grey-superlight-color;
+  color: $font-color-dark;
+}
+
+.button-full-width {
+  width: 100%;
+}
+
+.button-fix-width {
+  min-width: 200px;
+}
