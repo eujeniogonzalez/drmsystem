@@ -30,7 +30,7 @@ function LoginPage() {
   return (
     <>
       <Header />
-      <Content>
+      <Content isPublic>
         {renderPageContent()}
       </Content>
       <Footer />

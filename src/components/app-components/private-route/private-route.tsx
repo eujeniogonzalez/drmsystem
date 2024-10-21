@@ -28,7 +28,7 @@ function PrivateRoute(props: PrivateRoutePropsType) {
   const loadingPage = (
     <>
       <Header />
-      <Content>
+      <Content isPublic>
         <Loader size={LoaderSizes.Large} color={LoaderColors.Grey} />
       </Content>
       <Footer />
@@ -38,6 +38,7 @@ function PrivateRoute(props: PrivateRoutePropsType) {
   useEffect(() => {
     if (authStatus !== AuthStatuses.Auth && !isUserRequestInProgress) {
       navigate(AppRoutes.Login);
+  console.log('1111')
     }
   }, [authStatus]);
 
