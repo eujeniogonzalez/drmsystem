@@ -6,7 +6,11 @@ export enum AppRoutes {
   Confirm = '/confirm/:confirmId',
   NewPassword = '/newpassword/:repassId',
   NotFound = '/notfound',
-  Dashboard = '/dashboard'
+  Dashboard = '/dashboard',
+  Pets = '/pets',
+  Finance = '/finance',
+  Fundraising = '/fundraising',
+  Team = '/team',
 };
 
 export const APP_START_ROUTE = AppRoutes.Dashboard;

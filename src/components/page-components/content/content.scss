@@ -1,6 +1,6 @@
 @import '../../../const/const.scss';
 
-.page-content {
+main {
   min-height: calc(100vh - $header-height - $footer-height);
   width: $content-width;
   max-width: $content-max-width;
@@ -9,10 +9,10 @@
   display: flex;
   padding: 20px 0;
   position: relative;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
 }
 
-.page-section {
-  flex: 2 0 auto;;
+.page-content {
+  flex-grow: 2;
 }

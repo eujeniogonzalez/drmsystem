@@ -69,7 +69,7 @@ function NewPasswordPage() {
   return (
     <>
       <Header />
-      <Content>
+      <Content isPublic>
         {renderPageContent()}
       </Content>
       <Footer />

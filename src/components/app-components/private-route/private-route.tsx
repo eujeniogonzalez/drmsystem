@@ -38,7 +38,6 @@ function PrivateRoute(props: PrivateRoutePropsType) {
   useEffect(() => {
     if (authStatus !== AuthStatuses.Auth && !isUserRequestInProgress) {
       navigate(AppRoutes.Login);
-  console.log('1111')
     }
   }, [authStatus]);
 
