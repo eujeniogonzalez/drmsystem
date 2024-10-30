@@ -75,4 +75,6 @@ body {
   border: 2px solid $border-color;
   resize: vertical;
 }
-
+ul,li {
+  list-style: none;
+}

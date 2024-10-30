@@ -69,7 +69,7 @@ function RegisterPage() {
   return (
     <>
       <Header />
-      <Content>
+      <Content isPublic>
         {renderPageContent()}
       </Content>
       <Footer />

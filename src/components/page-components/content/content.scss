@@ -1,13 +1,18 @@
 @import '../../../const/const.scss';
 
-.page-content {
+main {
   min-height: calc(100vh - $header-height - $footer-height);
   width: $content-width;
   max-width: $content-max-width;
   margin: auto;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
   padding: 20px 0;
   position: relative;
+  gap: 20px;
+  justify-content: center;
+}
+
+.page-content {
+  flex-grow: 2;
 }
